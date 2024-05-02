@@ -1,0 +1,43 @@
+<!-- Rafael Gustavo Leal dos Santos n°28 2°A -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de contato</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>  
+    <div class="title-container">
+        <h2>Formulário de Contato</h2>
+    </div>
+    <div class="profile">
+    <img id="avatar" src='img/avatar-removebg-preview.png' alt="Foto do avatar de um usuário"/>
+    <div class="form-container">
+        <form id="contactForm" action="index1.html" method="POST" onsubmit="return validarForm()">
+            <div class="input-group">
+                <div class="form-group">
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" id="usuario" name="usuario" required>
+                </div>                           
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="text" id="senha" name="senha" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="nivel-acesso">Nível de Acesso:</label>
+                <select id="nivel-acesso" name="nivel-acesso">
+                    <option value="1">Usuário comum</option>
+                    <option value="2">Admin</option>
+                </select>
+            </div>           
+            <input id="entre" type="submit" value="Entrar">
+            <div class="link-container">
+                <a href="./html/esqueceu_senha.html">Esqueceu a senha?</a>
+            </div>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
